@@ -17,12 +17,12 @@ const handleSubmit = async (e) => {
     <div className='w-full p-6 rounded-lg shadow-md bg-blue-900 bg-opacity-80'>
      <h1 className='text-3xl font-semibold text-center text-gray-300'>
       Login
-      <span className='text-orange-400'> FinesseFleet Chat</span>
+      <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-red-600'> FinesseFleet Chat</span>
      </h1>
    <form onSubmit={handleSubmit}>
     <div>
       <label className='label p-2 '>
-        <span className='text-base label-text text-orange-400'>Username</span>
+        <span className='text-base label-text text-gray-300'>Username</span>
       </label>
       <input type='text' placeholder='Enter Username' className='w-full input input-bordered h-10'
       value={username}
@@ -31,14 +31,14 @@ const handleSubmit = async (e) => {
     </div>
     <div>
       <label className='label'>
-        <span className='text-base label-text text-orange-400'>Password</span>
+        <span className='text-base label-text text-gray-300'>Password</span>
       </label>
       <input type='password' placeholder='Enter Password' className='w-full input input-bordered h-10' 
       value={password}
       onChange={(e) => setPassword(e.target.value)}
       />
     </div>
-    < Link to='/signup' className='text-sm hover:underline text-orange-400 hover:text-white mt-2 inline-block'>
+    < Link to='/signup' className='text-sm hover:underline text-gray-300 hover:text-white mt-2 inline-block'>
       {"Don't"} have an account?
     </Link>
     <div>

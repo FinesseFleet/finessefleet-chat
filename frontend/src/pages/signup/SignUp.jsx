@@ -28,12 +28,12 @@ const handleSubmit = async (e) => {
       <div className='w-full p-6 rounded-lg shadow-md bg-blue-900 bg-opacity-80'>
         <h1 className='text-3xl font-semibold text-center text-gray-300'>
           Sign Up
-          <span className='text-orange-400'> FinesseFleet Chat</span>
+          <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-red-600'> FinesseFleet Chat</span>
         </h1>
         <form onSubmit={handleSubmit}>
           <div>
             <label className='label p-2 '>
-              <span className='text-base label-text text-orange-400'>Full Name</span>
+              <span className='text-base label-text text-gray-300'>Full Name</span>
             </label>
             <input type='text' placeholder='Enter Your Name' className='w-full input input-bordered h-10' 
               value={inputs.fullName}
@@ -42,7 +42,7 @@ const handleSubmit = async (e) => {
           </div>
           <div>
             <label className='label p-2 '>
-              <span className='text-base label-text text-orange-400'>Username</span>
+              <span className='text-base label-text text-gray-300'>Username</span>
             </label>
             <input type='text' placeholder='Enter Unique Username' className='w-full input input-bordered h-10' 
             value={inputs.username}
@@ -51,7 +51,7 @@ const handleSubmit = async (e) => {
           </div>
           <div>
             <label className='label'>
-              <span className='text-base label-text text-orange-400'>Password</span>
+              <span className='text-base label-text text-gray-300'>Password</span>
             </label>
             <input type='password' placeholder='Enter Password' className='w-full input input-bordered h-10' 
             value={inputs.password}
@@ -60,7 +60,7 @@ const handleSubmit = async (e) => {
           </div>
           <div>
             <label className='label pb'>
-              <span className='text-base label-text text-orange-400'>Confirm Password</span>
+              <span className='text-base label-text text-gray-300'>Confirm Password</span>
             </label>
             <input type='password' placeholder='Confirm Your Password' className='w-full input input-bordered h-10' 
             value={inputs.confirmPassword}
@@ -69,7 +69,7 @@ const handleSubmit = async (e) => {
           </div>
           <GenderCheckbox onCheckboxChange = {handleCheckboxChange} selectedGender={inputs.gender} />
 
-          < Link to='/login' className='text-sm hover:underline hover:text-white mt-2 inline-block text-orange-400'>
+          < Link to='/login' className='text-sm hover:underline hover:text-white mt-2 inline-block text-gray-300'>
             Already have an account?
           </Link>
           <div>
